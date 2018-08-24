@@ -6,6 +6,7 @@ group = 'com.github.KwabenBerko'
 android {
     compileSdkVersion 26
     buildToolsVersion "26.0.0"
+    enforceUniquePackageName = false
 
     defaultConfig {
         minSdkVersion 15
@@ -29,6 +30,9 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
+
+    compile 'com.github.KwabenBerko:OpenWeatherMap-Android-Library:v1.1.2'
+
     compile 'com.android.support:appcompat-v7:26.+'
     compile 'com.squareup.retrofit2:retrofit:2.3.0'
     compile 'com.squareup.retrofit2:converter-gson:2.3.0'
